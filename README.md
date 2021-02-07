@@ -48,9 +48,9 @@ const app = new Koa()
 app
   .use(koaBoom())
   .use((ctx) => {
-    // ==> ctx.badRequest()
-    // ==> ctx.response.badRequest()
-    ctx.badRequest()
+    // ==> ctx.boom.badRequest()
+    // ==> ctx.response.boom.badRequest()
+    ctx.boom.badRequest()
   })
 
 ```
